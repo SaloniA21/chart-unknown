@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Chart Unknown" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="theme-color" content="#1a1e3c" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <title>Chart Unknown</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%231a1e3c'/%3E%3Ccircle cx='8' cy='8' r='5' fill='none' stroke='%23e0b46a' stroke-width='1.5'/%3E%3Cpath d='M8 3.5 9.5 8 6.5 8Z' fill='%23e8806f'/%3E%3Cpath d='M8 12.5 9.5 8 6.5 8Z' fill='%23eef2ee'/%3E%3C/svg%3E"
+    />
+    <script type="module" crossorigin src="./assets/index-3fauXp77.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-_CQv_lzr.css">
+  </head>
+  <body>
+    <canvas id="title-canvas" aria-hidden="true"></canvas>
+    <main id="app">
+      <header id="hud" hidden></header>
+      <div id="stage">
+        <canvas
+          id="screen"
+          width="320"
+          height="180"
+          aria-label="The docks at dusk"
+        ></canvas>
+        <section id="panel" aria-live="polite"></section>
+      </div>
+      <div id="touch-controls">
+        <button
+          id="btn-left"
+          class="btn touch-btn touch-walk"
+          type="button"
+          aria-label="Walk left"
+        >
+          ◀
+        </button>
+        <button id="btn-talk" class="btn touch-btn touch-talk" type="button">
+          Talk
+        </button>
+        <button
+          id="btn-right"
+          class="btn touch-btn touch-walk"
+          type="button"
+          aria-label="Walk right"
+        >
+          ▶
+        </button>
+      </div>
+    </main>
+    <div id="overlay" hidden></div>
+    <div id="rotate-hint" role="status">
+      <span class="rotate-icon" aria-hidden="true">📱</span>
+      <p>Turn your phone sideways to play.</p>
+    </div>
+  </body>
+</html>
