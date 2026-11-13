@@ -10,6 +10,8 @@ The main character speaks aloud once in the game: **"I wish..."** at the gate of
 
 That is all. The game looks for `i-wish.ogg`, then `i-wish.mp3`, `i-wish.m4a`, `i-wish.wav`, and plays the first one it finds.
 
+The scene also has a hard limit of 6 seconds for the voice (`VOICE_LIMIT_SECONDS` in `src/engine/wishSequence.ts`): at 6 seconds the screen cuts to black even if the recording goes on, so keep the recording short. There is no way to skip the line once it starts.
+
 If the recording is longer than "I wish..." and you want the cut earlier, set `WISH_CUT_AFTER_SECONDS` in `src/audio/voice.ts` to the number of seconds in.
 
 ## What plays if there is no recording
